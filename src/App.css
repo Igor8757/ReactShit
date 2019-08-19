@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -38,10 +39,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(230, 231, 245);
+  padding: 1%
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.input {
+  padding: 5px 15px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 4px;
+
 }
 
 .button {
@@ -54,8 +66,8 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  margin: 10px;
   border-radius: 4px;
-  
 }
 
 .button:hover {
