@@ -20,14 +20,23 @@ class TodoList extends Component{
             items: [...this.state.items, this.state.term]
         });
     }
+    onClear = (event) => {
+        event.preventDefault()
+        this.setState({
+            term: '',
+            items: []
+        });
+    }
+
     render(){
         return (
             <div>
                 <p>To do List</p>
                 <form onSubmit={this.onSubmit}>
-                    <input class="input" value={this.state.term} onChange={this.onChange} />
+                    <input className="input" value={this.state.term} onChange={this.onChange} />
                     <br></br>
-                    <button class="button">Submit</button>
+                    <button className="button">Submit</button>
+                    <button className="button" onClick={this.onClear}>Clear</button>
                 </form>
                 <ul>
                 {
